@@ -1,0 +1,93 @@
+/* App.css */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .upload-form {
+    margin-bottom: 20px;
+  }
+  
+  .file-input {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .upload-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .upload-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .preview-container {
+    margin-top: 20px;
+  }
+  
+  .preview-title {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .preview-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .object-links {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .object-item {
+    margin-bottom: 10px;
+  }
+  
+  .amazon-link {
+    color: #0073e6;
+    text-decoration: none;
+  }
+  
+  .amazon-link:hover {
+    text-decoration: underline;
+  }
+  
+  .result-container {
+    margin-top: 20px;
+  }
+  
+  .result-title {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .detected-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+  }
+  

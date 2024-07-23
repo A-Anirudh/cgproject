@@ -10,13 +10,11 @@ from pathlib import Path
 
 app = FastAPI()
 
-# Initialize YOLOv8 model
 model = YOLO('yolov8n.pt')
 
-# Allow CORS
 origins = [
     "http://localhost",
-    "http://localhost:5173",  # Add your frontend URL here
+    "http://localhost:5173",
     "http://0.0.0.0",
     "http://0.0.0.0:8000"
 ]
@@ -68,7 +66,7 @@ async def upload_image(image: UploadFile = File(...)):
     # Save annotated image
     cv2.imwrite(annotated_image_path, img)
 
-    # Create a BytesIO object from the image bytes
+
     with open(annotated_image_path, 'rb') as img_file:
         img_bytes = img_file.read()
 
@@ -80,7 +78,7 @@ async def upload_image(image: UploadFile = File(...)):
     return JSONResponse(
         content={
             "object_links": object_links,
-            "image_url": f"http://localhost:8000/annotated-image/{os.path.basename(annotated_image_path)}"  # Correct URL for the annotated image
+            "image_url": f"http://localhost:8000/annotated-image/{os.path.basename(annotated_image_path)}"
         }
     )
 
